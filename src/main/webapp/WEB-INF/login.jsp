@@ -11,14 +11,19 @@
     <title>Login</title>
 </head>
 <body>
-    <form>
+    <form method="post" action="login">
         <p>Login</p>
-        <input type="email">
+        <input type="email" name="login">
         <p>Password</p>
-        <input type="password">
+        <input type="password" name="password">
 
         <p><input type="submit" value="Valider"></p>
     </form>
 
+    <p>${!empty nom ? "Connected" : "Disconnected"}</p>
+    <p>Cookie value : ${loginCookie}</p>
+    <p>Ip address : ${ipAdress}</p>
+    <p>Tentatives manquées: ${empty tentatives ? "0" : tentatives}</p>
+<!-- bloquer l'utilisateur après X tentatives -->
 </body>
 </html>

@@ -31,6 +31,15 @@
         <url-pattern>/ajout</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RechercheController</servlet-name>
+        <servlet-class>servlets.RechercheController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RechercheController</servlet-name>
+        <url-pattern>/recherche</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>
